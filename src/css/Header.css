@@ -1,0 +1,32 @@
+.header {
+    width: 100%;
+}
+
+.input-box {
+    position: relative;
+    height: 52px;
+    padding: 0 25px;
+}
+
+.input-icon ion-icon {
+    position: absolute;
+    top: 50%;
+    color: #999;
+    font-size: 25px;
+    transform: translate(17px, -55%);
+}
+
+.input-box .input-field {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 0 20px 0 53px;
+    border: 1.5px solid #999;
+    transition: border-color ease-in-out 0.3s;
+}
+
+.input-box .input-field:focus {
+    border: 2px solid #1FC5A8;
+}

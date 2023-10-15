@@ -1,0 +1,33 @@
+.controls {
+    width: 100%;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1px solid #999;
+}
+
+.filter-item:first-of-type {
+    margin-left: 0;
+}
+
+.filter-item {
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.filter-item.active {
+    font-weight: 500;
+    color: #1FC5A8;
+}
+
+.clear-all-btn {
+    padding: 8px 10px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #f12711 0%, #f5af19 100%);
+    background: linear-gradient(to bottom right, #5761B2, #1FC5A8);
+}

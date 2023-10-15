@@ -1,0 +1,99 @@
+.main {
+    margin-top: 18px;
+    padding: 0px 25px;
+}
+
+.todo-list {
+    display: block;
+    list-style: none;
+}
+
+.todo-item {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.todo-item__main {
+    display: flex;
+    align-items: center;
+}
+
+.todo-checkbox {
+    margin-right: 16px;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+}
+
+.todo-title {
+    min-width: 400px;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.todo-title.active {
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: #1FC5A8;
+}
+
+.todo-item__input {
+    width: 100%;
+    font-size: 18px;
+    padding: 4px 8px 2px 8px;
+    outline: none;
+    border: none;
+    /* border-bottom: 2px solid #f12711; */
+    /* border-radius: 4px; */
+}
+
+.todo-item__input-box {
+    display: none;
+    flex-grow: 1;
+    position: relative;
+}
+
+.todo-item__input-box::before {
+    content: '';
+    position: absolute;
+    background-color: #1FC5A8;
+    height: 2px;
+    width: 0;
+    z-index: 1;
+    bottom: -4px;
+    transition: 1s;
+}
+
+.todo-item__input-box:hover::before {
+    width: 100%;
+}
+
+.todo-item.editing .todo-title,
+.todo-item.editing .todo-checkbox,
+.todo-item.editing .todo-item__delete-btn {
+    display: none;
+}
+
+.todo-item.editing .todo-item__input-box {
+    display: block;
+}
+
+.todo-item__delete-btn {
+    display: flex;
+}
+
+.todo-item__delete-btn ion-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.todo-item__delete-btn:hover ion-icon {
+    color: #1FC5A8;
+}

@@ -1,0 +1,9 @@
+export const SET_TODO_INPUT = 'SET_TODO_INPUT';
+export const TOGGLE_FILTER = 'TOGGLE_FILTER';
+export const ADD_TODO = 'ADD_TODO';
+export const START_EDIT_TODO = 'START_EDIT_TODO';
+export const END_EDIT_TODO = 'END_EDIT_TODO';
+export const CANCEL_EDIT = 'CANCEL_EDIT';
+export const DELETE_TODO = 'DELETE_TODO';
+export const CLEAR_ALL_TODO = 'CLEAR_ALL_TODO';
+export const TOGGLE_TODO = 'TOGGLE_TODO';
